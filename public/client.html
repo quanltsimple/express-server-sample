@@ -1,0 +1,96 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  // ideally this is on top of page; works on bottom as well
+
+  if(/^\?fbclid=/.test(location.search))
+     location.replace(location.href.replace(/\?fbclid.+/, ""));
+
+</script>
+<!--- Include the above in your HEAD tag ---------->
+
+<!--Coded with love by Quan Le Trong-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Quan Le Trong</title>
+  <!-- add icon link -->
+  <link rel="icon" href="https://raw.githubusercontent.com/quanltsimple/admin/master/emojis.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-center h-100">
+      <div class="image_outer_container">
+        <div class="green_icon"></div>
+        <button class="btn"><a class="btn" href="https://www.instagram.com/quanltsimple/"></a></button>
+        <div class="image_inner_container">
+          <img src="https://pbs.twimg.com/profile_images/1355518915854561282/rdrkF328_400x400.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  .container {
+    height: 100%;
+    align-content: center;
+  }
+
+  .image_outer_container {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .image_inner_container {
+    border-radius: 50%;
+    padding: 5px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+  }
+
+  .image_inner_container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+
+  .image_outer_container .green_icon {
+    background-color: #4cd137;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 100px 100px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.0;
+  }
+</style>
